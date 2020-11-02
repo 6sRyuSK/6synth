@@ -12,3 +12,8 @@ export const generateKeys = () => {
     keyboardElm.appendChild(key(i.toString()))
   }
 }
+
+const playBtn = document.getElementById('play') as HTMLButtonElement
+playBtn.onclick = () => {
+  window.sixSynth.play()
+}
