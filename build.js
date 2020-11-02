@@ -32,6 +32,6 @@ build().then(() => {
   if (watching) {
     console.log('Watching...')
     const sane = require('sane')
-    sane('./src', { glob: ['**/*.js', '**/*.jsx'] }).on('change', build)
+    sane('./src', { glob: ['**/*.ts', '**/*.jsx'] }).on('change', build)
   }
 })
