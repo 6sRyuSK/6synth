@@ -1,7 +1,7 @@
-const waveForm = document.getElementById('vco') as HTMLFormElement
+const vco = document.getElementById('vco') as HTMLFormElement
 
-waveForm.onchange = () => {
-  window.sixSynth.changeWave(waveForm.wave.value)
+vco.onchange = () => {
+  window.sixSynth.changeWave(vco.wave.value)
 }
 
 const waveform = document.getElementById('waveform') as HTMLCanvasElement
