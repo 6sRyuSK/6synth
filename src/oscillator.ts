@@ -14,4 +14,10 @@ export class Oscillator {
   stop() {
     this.osc.stop()
   }
+
+  changeWave(type: waveType) {
+    this.osc.type = type
+  }
 }
+
+type waveType = 'sine' | 'square' | 'sawtooth' | 'triangle'
