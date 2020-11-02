@@ -1,0 +1,10 @@
+#keyboard {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+}
+
+.key {
+  flex: 1;
+  border: solid black 1px;
+}
