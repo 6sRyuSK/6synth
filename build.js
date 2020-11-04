@@ -17,7 +17,7 @@ const build = async () => {
       minify: true,
       bundle: true,
       define: { 'process.env.NODE_ENV': '"production"' },
-      sourcemap: true,
+      sourcemap: watching,
     })
   } catch (error) {
     console.error(error)
