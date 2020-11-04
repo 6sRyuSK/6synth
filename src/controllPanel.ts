@@ -24,8 +24,8 @@ const intervalid = window.setInterval(function() {
   canvasContext.clearRect(0, 0, waveform.width, waveform.height);
   // Draw sound wave
   canvasContext.beginPath();
-  for (var i = 0, len = times.length; i < len; i++) {
-      var x = (i / len) * waveform.width;
+  for (var i = 0; i < times.length; i++) {
+      var x = (i / times.length) * waveform.width;
       var y = (1 - (times[i] / 255)) * waveform.height;
       if (i === 0) {
           canvasContext.moveTo(x, y);
