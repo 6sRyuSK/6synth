@@ -17,8 +17,3 @@ export const generateKeys = () => {
     keyboardElm.appendChild(key({frequency: Frequency[i+16][0], name: Frequency[i+16][1]}))
   }
 }
-
-const playBtn = document.getElementById('play') as HTMLButtonElement
-playBtn.onclick = () => {
-  window.sixSynth.play()
-}
