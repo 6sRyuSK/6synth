@@ -9,7 +9,7 @@ export class Oscillator {
     this.audioctx = new AudioContext()
     this.analyser = new AnalyserNode(this.audioctx)
     this.analyser.connect(this.audioctx.destination)
-    this.analyser.fftSize = 128
+    this.analyser.fftSize = 1024
     this.lfo = new OscillatorNode(this.audioctx)
     this.depth = new GainNode(this.audioctx)
   }
