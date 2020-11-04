@@ -7,4 +7,5 @@
 .key {
   flex: 1;
   border: solid black 1px;
+  user-select: none;
 }
