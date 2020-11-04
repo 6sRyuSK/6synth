@@ -1,8 +1,18 @@
 const vco = document.getElementById('vco') as HTMLFormElement
+const lfoRange = document.getElementById('rate') as HTMLInputElement
+const lfoDepth = document.getElementById('depth') as HTMLInputElement
 
 vco.onchange = () => {
   window.sixSynth.changeWave(vco.wave.value)
 }
+
+lfoRange.addEventListener('input', (event: any) => {
+  window.sixSynth.changeLFORate(Number(event.target.value))
+})
+
+lfoDepth.addEventListener('input', (event: any) => {
+  window.sixSynth.changeLFODepth(Number(event.target.value))
+})
 
 const waveform = document.getElementById('waveform') as HTMLCanvasElement
 const canvasContext = waveform.getContext('2d') as CanvasRenderingContext2D

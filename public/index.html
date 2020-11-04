@@ -16,6 +16,13 @@
         <input type="radio" name="wave" value="sawtooth">saw
         <input type="radio" name="wave" value="triangle">triangle
       </form>
+      <div id="lfo">
+        LFO
+        <input type="range" name="rate" id="rate" max="100" value="0">
+        <label for="rate">Rate</label>
+        <input type="range" name="depth" id="depth" max="100" value="0">
+        <label for="depth">Depth</label>
+      </div>
       <canvas id="waveform" width="600" height="300"></canvas>
     </div>
     <div id="keyboard">
