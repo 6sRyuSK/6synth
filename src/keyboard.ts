@@ -14,7 +14,7 @@ const key = (keyArgs: KeyArgs) => {
 
 export const generateKeys = () => {
   for(let i = 0; i <= 25; i++) {
-    keyboardElm.appendChild(key({frequency: Frequency[i+36][0], name: Frequency[i+36][1]}))
+    keyboardElm.appendChild(key({frequency: Frequency[i+16][0], name: Frequency[i+16][1]}))
   }
 }
 
